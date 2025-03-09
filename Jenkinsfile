@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('clone'){
             steps{
-                sh 'clone'
+                sh 'echo "clone"'
             }
 
         }
@@ -12,7 +12,7 @@ stage('test'){
         sh 'echo "test"'
     }
 }
-stage('createFile'){
+stage('CreateFile'){
     steps{
         sh 'touch text-$BUILD_ID'
     }
