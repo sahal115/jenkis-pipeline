@@ -25,9 +25,9 @@ stage('dockerImagetag'){
     }
 }         
         }
-        stage('pushImage'){
-            steps{
-                sh 'docker push 941377148643.dkr.ecr.us-east-1.amazonaws.com/jenkins-ci:latest'
+stage('PushImage'){
+    steps{
+        sh 'docker push 941377148643.dkr.ecr.us-east-1.amazonaws.com/jenkins-ci:latest'
             }
         }
     
