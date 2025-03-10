@@ -8,12 +8,12 @@ pipeline{
                 }
 
         }
-stage('dockerImageBuild'){
+stage('DockerImageBuild'){
     steps{
         sh 'docker -v'
     }
 }
-stage('pushImage'){
+stage('PushImage'){
     steps{
         sh 'docker ps'
     }
