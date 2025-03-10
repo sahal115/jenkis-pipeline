@@ -7,6 +7,7 @@ pipeline{
                 sh 'uname -r'
                 sh 'nproc'
                 sh 'uname -a'
+                sh 'ls'
             }
 
         }
